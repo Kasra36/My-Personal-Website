@@ -1,0 +1,100 @@
+.buda-light {
+  font-family: "Buda", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.knewave-regular {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lora-class {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* images */
+.hover-right {
+  transition: transform 0.3s ease;
+}
+
+.hover-right:hover {
+  transform: rotate(5deg);
+}
+
+.hover-left {
+  transition: transform 0.3s ease;
+}
+
+.hover-left:hover {
+  transform: rotate(-5deg);
+}
+
+img.fancy-hover-wiggle {
+  transition: transform 0.3s ease;
+}
+
+img.fancy-hover-wiggle:hover {
+  animation: wiggle 0.4s ease-in-out;
+}
+
+@keyframes wiggle {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-8px); }
+  50%  { transform: translateX(8px); }
+  75%  { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
+
+.move-left {
+  margin-left: 0 !important;             
+  order: -1 !important;                  
+  text-align: left !important;           
+}
+
+
+.masthead {
+  background-size: cover;  
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 80vh;     
+  display: flex;
+  align-items: center;   
+}
+
+.site-heading h1.knewave-regular {
+  font-family: 'Knewave', cursive;
+  font-size: clamp(3.5rem, 8vw, 6.5rem); 
+  line-height: 1.1;           
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.site-heading .subheading {
+  font-family: 'Buda', cursive;
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  font-weight: 700;      
+  line-height: 1.2;
+  color: white;
+  text-align: center;
+  display: block;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 768px) {
+  .site-heading h1.knewave-regular {
+    margin-bottom: 0.5rem;
+  }
+}
+
+#mainNav {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+

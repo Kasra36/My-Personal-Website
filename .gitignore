@@ -1,0 +1,15 @@
+# macOS junk
+.DS_Store
+
+# Flask / Python
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Flask instance folder (local configs / DBs)
+instance/
+
+# Virtual environments
+venv/
